@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    overflow: hidden;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px  black;
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.img-container{
+    box-sizing: border-box;
+    width: 140px;
+    margin: 0 auto;  
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+#pera {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #414141;
+    margin-top: 10px;
+}
+input {
+    padding: 8px 0px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+label {
+    margin-left: 14px;
+    font-weight: 600;
+}
+#Email-label{
+    margin-top: 20px;
+}
+.input-bx{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    padding: 12px 45px;
+    border-radius: 10px;
+    background-color: rgb(55, 55, 160);
+    color: #fff;
+    border: none;
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.d-none {
+    display: none;
+}

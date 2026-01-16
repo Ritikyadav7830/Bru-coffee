@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="./assists/css/DashBoard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="Dashboard-container ">
+        <header class="Dash-header">
+            <div class="logo-div">
+                <img src="./assists/images/Atthah.png" alt="">
+            </div>
+
+            <div class="logOut-div">
+                <p>Logged in as <b>Admin User</b></p>
+                <p><i class="fa-solid fa-arrow-right-from-bracket logOut"></i></p>
+                <div>
+        </header>
+
+
+        <div class="section1">
+
+            <div class="Candidate-bx">
+                <div class="icon"><i class="fa-solid fa-users"></i></div>
+                <div>
+                    <p>Total Candidates</p>
+                    <p class="number1 number"></p>
+                </div>
+            </div>
+
+            <div class="Shortlisted-bx">
+                <div class="icon"><i class="fa-solid fa-user"></i></div>
+                <div>
+                    <p>Shortlisted</p>
+                    <p class="number">12</p>
+                </div>
+            </div>
+
+            <div class="Cv-Download">
+                <div class="icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+                <div>
+                    <p>Cv's Download</p>
+                    <p class="number">45</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section2">
+            <div class="Candidate-div">
+                <p>Candidate List</p>
+            </div>
+
+            <div class="Refresh-div">
+                <i class="fa-solid fa-arrows-rotate refresh"></i>
+                <p>Refresh Data</p>
+            </div>
+        </div>
+
+
+        <div class="section3">
+            <table class="candidate-table">
+                <thead>
+                    <tr>
+                        <th>FULL NAME</th>
+                        <th>EMAIL ADDRESS</th>
+                        <th>EDUCATION SUMMARY</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+
+                <tbody id="candidateBody">
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination-container">
+            <button id="prevBtn">Prev</button>
+            <span id="pageNumbers"></span>
+            <button id="nextBtn">Next</button>
+        </div>
+
+    </div>
+
+    
+    <script src="./assists/js/Dashboard.js"></script>
+</body>
+
+</html>
