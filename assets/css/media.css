@@ -1,0 +1,411 @@
+@media screen and (width: 380px) {
+
+    .cup {
+        position: absolute;
+        width: 25%;
+        top: 60%;
+        left: 0%;
+    }
+
+    .couple {
+        position: absolute;
+        width: 40%;
+        top: 90%;
+        right: 10%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+    .Bru-minder {
+        margin-top: 0px;
+    }
+
+    .Bru-minder {
+        margin-top: 10px;
+    }
+
+    .page1 {
+        width: 100vw;
+    }
+
+    .page2 {
+        width: 100vw;
+    }
+    .page3 {
+        width: 100vw;
+    }
+    .page4 {
+        width: 100vw;
+    }
+
+    #pera-pic {
+        padding: 0 20px;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 5px;
+        color: #613a17;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    .upload-img-2 {
+        width: 30%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .data-container {
+        position: relative;
+    }
+
+    .absolute-img1 {
+        position: absolute;
+        width: 13%;
+        top: -5%;
+        left: -4%;
+    }
+
+    .absolute-img1 img {
+        display: block;
+        width: 100%;
+    }
+
+
+    .absolute-img2 {
+        position: absolute;
+        width: 12%;
+        top: 0%;
+        left: 5%;
+    }
+
+    .absolute-img2 img {
+        display: block;
+        width: 100%;
+    }
+
+    .absolute-img3 {
+        position: absolute;
+        width: 8%;
+        top: -6%;
+        left: 70%;
+    }
+
+    .absolute-img3 img {
+        display: block;
+        width: 100%;
+    }
+
+    .absolute-img4 {
+        position: absolute;
+        width: 25%;
+        top: 100%;
+        left: 0%;
+    }
+
+    .absolute-img4 img {
+        display: block;
+        width: 100%;
+    }
+
+    .absolute-img5 {
+        position: absolute;
+        width: 40%;
+        top: 90%;
+        right: 10%;
+    }
+
+    .absolute-img5 img {
+        display: block;
+        width: 100%;
+    }
+
+    .bru-logo-container {
+        width: 16%;
+        margin: 0 auto;
+        padding-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .gemini-logo-container {
+        width: 18%;
+        margin: 0 auto;
+    }
+
+    .gemini-logo-container p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .bru-content {
+        margin: 150px 0px;
+    }
+
+    .select-bar .select-input {
+    padding: 20px 85px 20px 12px;
+}
+
+#page4-select-input {
+    padding: 20px 180px 20px 12px;
+}
+}
+
+
+@media (min-width: 1024px) {
+    /* Yah CSS sirf desktop screens ke liye lagega */
+
+    .bru-gold-img {
+        width: 17%;
+        position: absolute;
+        top: 75%;
+        left: -10%;
+    }
+
+    .bru-gold-img img {
+        display: block;
+        width: 100%;
+    }
+
+    .squre-img {
+        width: 8%;
+        position: absolute;
+        top: 94%;
+        left: 45%;
+    }
+
+    .logo-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+
+    .bru-logo-container {
+        width: 6%;
+        margin: 0;
+        margin-left: 30px;
+    }
+
+    .bru-logo-container img {
+        display: block;
+        width: 100%;
+    }
+
+    .bru-minder-logo-container {
+        width: 25%;
+        margin: 0;
+    }
+
+    .gemini-logo-container {
+        width: 8%;
+        margin: 0;
+        margin-right: 30px;
+    }
+
+    .gemini-logo-container img {
+        display: block;
+        width: 100%;
+    }
+
+    .page1 {
+        width: 55vw;
+        margin: 0 auto;
+    }
+
+    .page2 {
+        width: 55vw;
+        /* height: 100vh; */
+        margin: 0 auto;
+    }
+
+    #pera1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 600;
+        color: #613a17;
+    }
+
+    #pera-pic {
+        padding: 0 20px;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 5px;
+        color: #613a17;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    .upload-img-1 {
+        width: 20%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .upload-img-1 img {
+        display: block;
+        width: 100%;
+    }
+
+    .upload-img-2 {
+        width: 20%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #pera2 {
+        padding: 0 20px;
+        text-align: center;
+        font-weight: 700;
+        color: #613a17;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    #pera3 {
+        font-size: 0.6rem;
+        margin-bottom: 5px;
+        color: #613a17;
+    }
+
+    #pera4 {
+        padding: 0 20px;
+        text-align: center;
+        font-weight: 700;
+        color: #613a17;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    #pera5 {
+        color: #613a17;
+        font-size: 0.6rem;
+        margin-bottom: 2.5px;
+    }
+
+    #pera6 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 30px;
+        color: #613a17;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    form input {
+        width: 60%;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid #613a17;
+        color: #613a17;
+        background: transparent;
+        text-align: center;
+    }
+
+    form input:focus {
+        border: 1px solid #613a17;
+        color: #613a17;
+        outline: none;
+
+    }
+
+    form button {
+        background-color: #0C4B25;
+        color: white;
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1rem;
+    }
+
+    input::placeholder {
+        color: #613a17;
+        opacity: 1;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+        transition: 0.2s ease;
+    }
+
+    .data-container {
+        position: relative;
+    }
+
+
+    .absolute-img1 {
+        position: absolute;
+        width: 13%;
+        top: -5%;
+        left: -4%;
+    }
+
+    .absolute-img1 img {
+        display: block;
+        width: 100%;
+    }
+
+    .absolute-img2 {
+        position: absolute;
+        width: 12%;
+        top: 0%;
+        left: 5%;
+    }
+
+    .absolute-img2 img {
+        display: block;
+        width: 100%;
+    }
+
+    .absolute-img3 {
+        position: absolute;
+        width: 8%;
+        top: -10%;
+        left: 70%;
+    }
+
+    .absolute-img3 img {
+        display: block;
+        width: 100%;
+    }
+
+    .absolute-img4 {
+        position: absolute;
+        width: 15%;
+        top: 85%;
+        left: -8%;
+    }
+
+    .absolute-img4 img {
+        display: block;
+        width: 100%;
+    }
+
+    .absolute-img5 {
+        position: absolute;
+        width: 20%;
+        top: 60%;
+        right: -20%;
+    }
+
+    .absolute-img5 img {
+        display: block;
+        width: 100%;
+    }
+}
