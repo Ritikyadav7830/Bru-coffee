@@ -1,4 +1,5 @@
-@media screen and (width: 380px) {
+
+    @media (min-width: 350px) and (max-width: 380px) {
 
     .cup {
         position: absolute;
@@ -14,6 +15,14 @@
         right: 10%;
     }
 
+
+    #page4-back {
+    padding: 12px 46px;
+}
+
+ #page4-generate {
+    padding: 15px 28px;
+}
 }
 
 
@@ -37,13 +46,46 @@
     .page2 {
         width: 100vw;
     }
+
     .page3 {
         width: 100vw;
     }
-    .page4 {
+    .page-random {
         width: 100vw;
     }
 
+    .page4 {
+        width: 100vw;
+    }
+    .final-page {
+        width: 100vw;
+    }
+
+    .final-image {
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+    .final-page-text-container p {
+    font-size: 1.2rem;
+}
+
+.final-page-btn>:nth-child(1) {
+    padding: 10px 20px;
+}
+
+.final-page-btn>:nth-child(2) {
+    padding: 10px 20px;  
+}
+
+#final-pera {
+     font-size: 1rem;
+}
+
+#final-pera span {
+     font-size: 1rem;
+}
     #pera-pic {
         padding: 0 20px;
         text-align: center;
@@ -146,17 +188,20 @@
         margin: 150px 0px;
     }
 
-    .select-bar .select-input {
-    padding: 20px 85px 20px 12px;
+    .custom-select-wrapper {
+        max-width: 90%;
+    }
+
+    .page3-content h3 {
+        margin-top: 60px;
+        font-size: 1.8rem;
+
+    }
+
 }
 
-#page4-select-input {
-    padding: 20px 180px 20px 12px;
-}
-}
 
-
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     /* Yah CSS sirf desktop screens ke liye lagega */
 
     .bru-gold-img {
@@ -387,9 +432,9 @@
 
     .absolute-img4 {
         position: absolute;
-        width: 15%;
-        top: 85%;
-        left: -8%;
+        width: 16%;
+        top: 100%;
+        left: 0%;
     }
 
     .absolute-img4 img {
@@ -400,12 +445,79 @@
     .absolute-img5 {
         position: absolute;
         width: 20%;
-        top: 60%;
-        right: -20%;
+        top: 90%;
+        right: 13%;
+        ;
     }
 
     .absolute-img5 img {
         display: block;
         width: 100%;
     }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1025px) {
+
+    .page1 {
+        width: 80vw;
+    }
+
+    .page2 {
+        width: 80vw;
+    }
+    .page3 {
+        width: 80vw;
+    }
+    .page4 {
+        width: 80vw;
+    }
+    .final-page {
+        width: 80vw;
+    }
+
+    .bru-logo-container {
+        width: 12%;
+        padding-top: 20px;
+    }
+
+    .bru-minder-logo-container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .gemini-logo-container {
+        width: 15%;
+    }
+
+    .gemini-logo-container p {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+    .page3-container {
+        margin-top: 75px;
+    }
+
+    .bru-content h3 {
+        font-size: 2rem;
+    }
+
+    .bru-content p {
+        font-size: 1.3rem;
+    }
+
+    .bru-content button {
+        font-size: 1.5rem;
+        padding: 18px 39px;
+    }
+
+    .absolute-img5 {
+        width: 25%;
+    }
+
 }

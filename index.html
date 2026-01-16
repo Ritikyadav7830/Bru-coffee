@@ -3,13 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Bru Coffee</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
-<body>
+<body class="circular-gradient ">
 
     <section class="header">
         <div class="logo-container">
@@ -32,7 +38,7 @@
 
 
 
-    <section class="page1 common-section ">
+    <section class="page1 common-section">
 
         <div class="container">
 
@@ -97,23 +103,28 @@
 
             <p id="pera1">Share you & your boo’s pic.</p>
             <div class="upload-container">
-                <div class="upload-1">
 
+
+                <div class="upload-1" id="uploadContainer">
                     <p id="pera-pic">Your image</p>
-
                     <div class="upload-img-1">
                         <img src="assets/image/2nd-page/upload.png" alt="">
                     </div>
                     <p id="pera2">Click to upload</p>
                     <p id="pera3">PNG, JPG</p>
+                    <input type="file" id="fileInput" style="display: none;" accept=".png,.jpg,.jpeg">
                 </div>
-                <div class="upload-2">
-                    <p id="pera-pic">Your boo's image</p>
+
+
+
+                <div class="upload-2" id="uploadContainer2">
+                    <p id="pera-pic-2">Your boo's image</p>
                     <div class="upload-img-2">
-                        <img src="assets/image/2nd-page/upload.png" alt="">
+                        <img src="assets/image/2nd-page/upload.png" alt="" class="up-img-2">
                     </div>
                     <p id="pera4">Click to upload</p>
                     <p id="pera5">PNG, JPG</p>
+                    <input type="file" id="fileInput2" style="display: none;" accept=".png,.jpg,.jpeg">
                 </div>
             </div>
 
@@ -121,8 +132,26 @@
             <div class="form-container">
                 <p id="pera6">What should we call you <br> and your boo?</p>
                 <form action="#">
-                    <input type="text" placeholder="Your name">
-                    <input type="text" placeholder="Boo’s name">
+                    <input type="text" placeholder="Your name" class="your-name">
+                    <input type="text" placeholder="Boo’s name" class="boo-name">
+
+                    <div class="bothName-hidden-div d-none">
+                        <p>Please enter both names.</p>
+                    </div>
+
+                    <div class="photo-hidden-div d-none">
+                        <p>Please upload both photos.</p>
+                    </div>
+
+                    <div class="checked-hidden-div d-none">
+                        <p>Please agree to the terms to continue.</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">
+                            I understand and agree to the terms.</label>
+                    </div>
+
                     <button type="submit" id="page2-next">Next</button>
                 </form>
             </div>
@@ -159,24 +188,30 @@
 
 
             <div class="page3-content">
-                
-                    <h3>Add your dream destination</h3>
-                  
-                    <div class="select-bar">
-                    <select class="select-input">
-                        <option value="">Select your scene...</option>
-                        <option value="v1">Watching the Northern Lights</option>
-                        <option value="v2">Coffee at a Parisian Cafe</option>
-                        <option value="v3">Walk on the Beach at a sunset</option>
-                        <option value="v4">Scenic Mountain</option>
-                        <option value="v5">Picnic at a Beautiful Garden</option>
-                        <option value="v6">Walk in the Tulip Fields</option>
-                        <option value="v7">Together at the Giza Pyramids</option>
-                        <option value="v8">Coral Reefs</option>
-                        <option value="v9">Greek Santorini Village</option>
-                    </select>
+
+                <h3>Add your dream destination</h3>
+
+
+                <div class="custom-select-wrapper">
+                    <div class="custom-select">
+                        <div class="custom-select-trigger">Select your scene...</div>
+                        <div class="custom-options">
+                            <span class="custom-option" data-value="v1">Watching the Northern Lights</span>
+                            <span class="custom-option" data-value="v2">Coffee at a Parisian Cafe</span>
+                            <span class="custom-option" data-value="v3">Walk on the Beach at a sunset</span>
+                            <span class="custom-option" data-value="v4">Scenic Mountain</span>
+                            <span class="custom-option" data-value="v5">Picnic at a Beautiful Garden</span>
+                            <span class="custom-option" data-value="v6">Walk in the Tulip Fields</span>
+                            <span class="custom-option" data-value="v7">Together at the Giza Pyramids</span>
+                            <span class="custom-option" data-value="v8">Coral Reefs</span>
+                            <span class="custom-option" data-value="v9">Greek Santorini Village</span>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="Not-select-option d-none">
+                    <p>Please select a scene.</p>
+                </div>
 
                 <div class="page3-btn">
                     <button id="page3-back">Back</button>
@@ -189,7 +224,112 @@
         </div>
     </section>
 
-        <section class="page4 common-section d-none ">
+<!-- 
+
+    <section class="page-random common-section d-none">
+
+        <div class="page3-container">
+
+            <div class="hand-love-img">
+                <img src="assets/image/1st-page/hand-love.png" alt="hand-love-img">
+            </div>
+
+            <div class="cup-img">
+                <img src="assets/image/1st-page/cup.png" alt="cup-img">
+            </div>
+
+            <div class="bru-gold-img">
+                <img src="assets/image/1st-page/bru-gold.png" alt="bru-gold-img">
+            </div>
+
+            <div class="squre-img">
+                <img src="assets/image/1st-page/squre.png" alt="squre-img">
+            </div>
+
+            <div class="green-img">
+                <img src="assets/image/1st-page/green-circle.png" alt="green-img">
+            </div>
+
+
+            <div class="random-container">
+
+                <div class="page-random-content">
+
+              
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select">
+                            <div class="custom-select-trigger">Select your scene...</div>
+                            <div class="custom-options">
+                                <span class="custom-option" data-value="v1">Watching the Northern Lights</span>
+                                <span class="custom-option" data-value="v2">Coffee at a Parisian Cafe</span>
+                                <span class="custom-option" data-value="v3">Walk on the Beach at a sunset</span>
+                                <span class="custom-option" data-value="v4">Scenic Mountain</span>
+                                <span class="custom-option" data-value="v5">Picnic at a Beautiful Garden</span>
+                                <span class="custom-option" data-value="v6">Walk in the Tulip Fields</span>
+                                <span class="custom-option" data-value="v7">Together at the Giza Pyramids</span>
+                                <span class="custom-option" data-value="v8">Coral Reefs</span>
+                                <span class="custom-option" data-value="v9">Greek Santorini Village</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Not-select-option d-none">
+                        <p>Please select a scene.</p>
+                    </div>
+
+                    <div class="page3-btn">
+                        <button id="page3-back">Back</button>
+                        
+                    </div>
+
+                </div>
+
+
+                <div class="page3-content" id="page4-content">
+
+                  
+
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select" id="custom-select-2">
+                            <div class="custom-select-trigger" id="custom-select-trigger-2">Select a style...</div>
+                            <div class="custom-options">
+                                <span class="custom-option custom-options-2" data-value="v1">Comicbook</span>
+                                <span class="custom-option custom-options-2" data-value="v2">Animated</span>
+                                <span class="custom-option custom-options-2" data-value="v3">Photorealistic</span>
+                                <span class="custom-option custom-options-2" data-value="v4">Surprise me</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Not-select-option2 d-none">
+                        <p>Please select a style</p>
+                    </div>
+
+                    <div class="page3-btn">
+                      
+                        <button id="page4-generate">Generate</button>
+                    </div>
+
+
+                    Loading container (hidden by default) 
+                    <div id="loading-section" class="d-none">
+                        <div class="loading-bar">
+                            <div class="loading-progress"></div>
+                        </div>
+                        <p id="loading-text"></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+ -->
+
+
+
+    <section class="page4 common-section d-none ">
 
         <div class="page3-container">
 
@@ -215,25 +355,93 @@
 
 
 
-            <div class="page3-content">
-                
-                    <h3>Set your vibe!</h3>
-                  
-                    <div class="select-bar">
-                    <select class="select-input" id="page4-select-input">
-                        <option value="">Select a style...</option>
-                        <option value="v1">Comicbook</option>
-                        <option value="v2">Animated</option>
-                        <option value="v3">Photorealistic</option>
-                        <option value="v4">Surprise me</option>
-                    </select>
+            <div class="page3-content" id="page4-content">
+
+                <h3>Set your vibe!</h3>
+
+                <div class="custom-select-wrapper">
+                    <div class="custom-select" id="custom-select-2">
+                        <div class="custom-select-trigger" id="custom-select-trigger-2">Select a style...</div>
+                        <div class="custom-options">
+                            <span class="custom-option custom-options-2" data-value="v1">Comicbook</span>
+                            <span class="custom-option custom-options-2" data-value="v2">Animated</span>
+                            <span class="custom-option custom-options-2" data-value="v3">Photorealistic</span>
+                            <span class="custom-option custom-options-2" data-value="v4">Surprise me</span>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="Not-select-option2 d-none">
+                    <p>Please select a style</p>
+                </div>
 
                 <div class="page3-btn">
                     <button id="page4-back">Back</button>
                     <button id="page4-generate">Generate</button>
                 </div>
+
+
+                <!-- Loading container (hidden by default) -->
+                <div id="loading-section" class="d-none">
+                    <div class="loading-bar">
+                        <div class="loading-progress"></div>
+                    </div>
+                    <p id="loading-text"></p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="final-page common-section d-none">
+
+
+        <div class="final-page-container">
+
+            <div class="hand-love-img">
+                <img src="assets/image/1st-page/hand-love.png" alt="hand-love-img">
+            </div>
+
+            <div class="cup-img">
+                <img src="assets/image/1st-page/cup.png" alt="cup-img">
+            </div>
+
+            <div class="bru-gold-img">
+                <img src="assets/image/1st-page/bru-gold.png" alt="bru-gold-img">
+            </div>
+
+            <div class="squre-img">
+                <img src="assets/image/1st-page/squre.png" alt="squre-img">
+            </div>
+
+            <div class="green-img">
+                <img src="assets/image/1st-page/green-circle.png" alt="green-img">
+            </div>
+
+
+
+
+            <div class="final-page-content">
+
+                <div class="final-image">
+                    <img src="" alt="">
+                </div>
+
+                <div class="final-page-text-container">
+
+                    <p>Remind & surprise <br> your broo! <span><img src="assets/image/final-page/image2.png"
+                                alt=""></span></p>
+                </div>
+
+                <div class="final-page-btn">
+                    <button id="final-page-download"><i class="fa-solid fa-download"></i> Download</button>
+                    <button id="final-page-restart"><i class="fa-solid fa-rotate-right"></i> Restart</button>
+                </div>
+
+                <p id="final-pera">Do tag us <span>@brucoffeein</span> & we shall make <br> that dream date happen for
+                    real </p>
 
             </div>
 
